@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fixed_for_landing.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+    <!--Add font to css-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>RockBack</title>
+    <!--I can not use the below style in external file - the "main.css"; therefore, I use it here-->
+    <!--main color #505962-->
+    <style>
+        .btn-secondary{
+            border-width: medium;
+            border-radius: 0;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            padding: .6rem 1.2rem;
+            margin: 1rem;
+            color: white;
+            background-color: #505962;
+            border-color: #505962;
+        }
+
+        .btn-secondary:hover{
+            background-color: #333c46;
+            border-color: #333c46;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive" data-offset="50">
+<!--start home section-->
+<div id="home">
+    <!--navigation-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <h2>RockBack</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--this can be coded manually to see the list(css) or the dropdown (requireJS-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><!--1-->
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item"><!--2-->
+                    <a class="nav-link" href="#aboutme">About Us</a>
+                </li>
+                <li class="nav-item"><!--3-->
+                    <a class="nav-link" href="#plan">Plan</a>
+                </li>
+                <li class="nav-item"><!--4-->
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--end navigation-->
+
+    <!--start landing page-->
+    <div class="landing">
+        <div class="home-wrap">
+            <div class="home-inner"></div>
+        </div>
+    </div>
+    <div class="caption text-center">
+        <h1>Making Local Musicians International</h1>
+        <h3>This is a sample page and I hope that it can give an idea.<br>
+            Take a look at my work and if you like it I would love to hear from you!
+        </h3>
+        <a class="btn btn-outline-light btn-lg" href="#aboutme">Get Started</a>
+    </div>
+    <!--end landing page-->
+
+</div>
+<!--end home section-->
+
+<!--start about me section-->
+<div id="aboutme" class="offset">
+
+    <div class="container">
+        <div class="">
+            <img id="logo" src="logo.jpg" height="350" width="250" alt="logo">
+        </div><!--circle-->
+        <div class="col-12 narrow text-center">
+            <h1>We are RockBack,<span> and</span>
+                we are looking to change the music industry..
+            </h1>
+            <p class="lead">
+                    At RockBack, we strive to make local musicians to achieve the fame of
+                    international level. We provide advertising and sale services for a small
+                    commission and access to a social network of musicians. 
+            </p>
+            <a class="btn btn-secondary" href="#" target="_blank">About Us</a>
+        </div>
+    </div>
+</div>
+<!--end about me section-->
+
+<!--start plan section-->
+<div id="plan" class="offset">
+<div class="jumbotron">
+<div class="narrow text-center">
+    <div class="col-12">
+        <h3 class="heading">My Plan</h3>
+        <div class="heading-underline"></div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-6">
+            <div class="plan">
+                <i class="fas fa-laptop-code fa-3x" data-fa-transform="shrink-3 up-3"></i>
+                <h3>Web Development</h3>
+                <p>
+                    I hope that this sample has been satisfactory, but note that this is a sample and not a real website.
+                    If you like this sample, contact me!
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="plan">
+                <i class="fab fa-adobe fa-3x" data-fa-transform="shrink-3 up-3"></i>
+                <h3>Designing</h3>
+                <p>
+                   This is a sample website, but it has a sleek design and is very simple.
+                   This could be used for a simple company website or anything of the like.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div><!--narrow-->
+</div><!--jumbotron-->
+
+</div>
+<!--end plan section-->
+
+<!--start contact section-->
+<div id="contact" class="offset">
+<footer>
+    <div class="row justify-content-center">
+        <div class="col-md-5 text-center">
+            <h3>Trevor Gutierrez</h3>
+            <p>If you like my work, do not hesitate to let me know your thoughts.</p>
+            <strong>Contact Info</strong>
+            <p>+358414940841<br>vaahtlnirn1@yahoo.com</p>
+        </div>
+        <hr class="socket">
+        &copy; RockBack.
+    </div>
+</footer>
+</div>
+<!--end contact section-->
+<!--script source file-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

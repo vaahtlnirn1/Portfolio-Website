@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather&display=swap');
+
+/*---
+16px = 1 rem
+main color: #505962
+font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif;
+---*/
+
+body{
+    position: relative;
+}
+
+.offset:before{
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+body{
+    overflow-x:hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+/*---navigation---*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,0.6) !important;
+}
+
+.navbar-brand h2{
+    height: 2rem;
+}
+
+.navbar-nav li{
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: white;
+}
+
+/*--landing--*/
+.home-inner{
+    background: url("../logo2.png");
+}
+
+.caption{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    color: white;
+}
+
+.caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h3{
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+/*---about me section---*/
+#nhut{
+    border-radius: 50%;
+}
+.circle{
+    float: left;
+    shape-outside: circle();
+    margin: 50px 40px 50px 50px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 40%;
+}
+
+.narrow{
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+}
+
+.narrow h1{
+    font-size:2.4rem;
+}
+
+.container p{
+    text-align: justify;
+}
+
+.container h1{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #D4AF37;
+}
+.container span{
+    color: black;
+}
+
+/*---plan section---*/
+.jumbotron{
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+}
+
+h3.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+    width: 3rem; /*---48px---*/
+    height: .2rem;
+    background-color: #505962;
+    margin: 0 auto;
+}
+
+.plan{
+    margin: 0 50px;
+}
+.plan svg.svg-inline--fa{
+    color: #505962;
+}
+
+.plan h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+}
+
+.plan p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/*---contact section---*/
+footer{
+    background-color: #40474e;
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: -2rem;
+}
+
+footer h3{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+
+footer a{
+    color: white;
+}
+
+footer a{
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+footer a:hover{
+    color: #10a8d0 !important;
+}
+
+hr.socket{
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    margin-top: 3rem;
+}
+
+/*---scaling the screen*/
+@media (max-width: 780px){
+    .caption h1{
+        font-size: 1.9rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .caption h3{
+        font-size: 1.1rem;
+        padding-bottom: 1.2rem;
+    }
+    .btn-lg{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .narrow h1{
+        font-size:1.7rem;
+    }
+}
